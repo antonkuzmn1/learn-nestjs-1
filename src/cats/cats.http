@@ -1,0 +1,28 @@
+### create
+POST http://localhost:3000/cats
+Content-Type: application/json
+
+{
+  "name": "Kitty",
+  "age": 2,
+  "breed": "Maine Coon"
+}
+
+### findAll
+GET http://localhost:3000/cats
+
+### findOne
+GET http://localhost:3000/cats/13
+
+### update
+PATCH http://localhost:3000/cats/13
+Content-Type: application/json
+
+{
+  "name": "Kitty",
+  "age": 3,
+  "breed": "Maine Coon"
+}
+
+### remove
+DELETE http://localhost:3000/cats/13
